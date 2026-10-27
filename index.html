@@ -169,11 +169,6 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--brass-deep); }
 }
 .hero-arch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.4s ease; }
 .hero-arch img.on { opacity: 1; }
-.hero-coin {
-  position: absolute; left: 0; top: 62%; width: 30%; aspect-ratio: 1; border-radius: 50%; overflow: hidden;
-  border: 8px solid var(--bg); box-shadow: 0 0 0 1px var(--frame); background: var(--surface);
-}
-.hero-coin img { width: 100%; height: 100%; object-fit: cover; }
 .hero-meta { width: 80%; margin: 30px 0 0 6%; display: grid; justify-items: center; gap: 14px; text-align: center; }
 .hero-cap { display: grid; justify-items: center; gap: 2px; border: 0; background: none; padding: 0; cursor: pointer; }
 .hero-cap .hc-name { font-family: var(--font-display); font-size: 24px; line-height: 1.15; }
@@ -196,7 +191,6 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--brass-deep); }
   .hero-actions .btn svg { display: none; }
   .hero-visual { width: 100%; }
   .hero-arch { width: 78%; margin-left: 11%; }
-  .hero-coin { width: 28%; left: 1%; }
   .hero-meta { width: 100%; margin: 28px 0 0; gap: 8px; }
   .hero-cap .hc-name { font-size: 22px; }
 }
@@ -645,9 +639,7 @@ h1 em, h2 em, h3 em { font-style: italic; color: var(--brass-deep); }
       </div>
       <div class="hero-visual" id="hero-visual">
         <div class="hero-frame">
-          <div class="hero-arch" id="hero-arch"><img class="on" src="img/xl/jewelry-44.jpg" alt="Carnelian Necklace Set on a linen bust"></div>
-          <span class="hero-coin"><img src="img/sm/jewelry-12.jpg" alt="Amethyst and pearl bracelet on white marble"></span>
-        </div>
+          <div class="hero-arch" id="hero-arch"><img class="on" src="img/xl/jewelry-44.jpg" alt="Carnelian Necklace Set on a linen bust"></div>        </div>
         <div class="hero-meta">
           <button type="button" class="hero-cap" id="hero-cap" data-open="44"><span class="label">No. 44</span><span class="hc-name">Carnelian Necklace Set</span><span class="hc-price">$110</span></button>
           <div class="hero-dots" id="hero-dots" role="group" aria-label="Featured pieces"></div>
