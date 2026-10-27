@@ -1,0 +1,1352 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Handmade beaded jewelry in natural stones, freshwater pearls and glass: bracelets, bracelet pairs, necklaces and matching sets.">
+<meta property="og:title" content="Beaded Gemstone Shop">
+<meta property="og:description" content="Handmade beaded jewelry in natural stones, freshwater pearls and glass.">
+<meta property="og:image" content="https://voxlera.github.io/jewelry-shop/img/xl/jewelry-44.jpg">
+<meta property="og:url" content="https://voxlera.github.io/jewelry-shop/">
+<meta property="og:type" content="website">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Beaded Gemstone Shop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500&display=swap">
+<style>
+/* Layout: a linen-and-marble atelier. Porcelain pages and linen bands echo the busts and
+   marble the pieces are photographed on, so the colorful stones carry all the color.
+   Espresso sections hold the sets like a jewelry tray, brass marks the small details,
+   and arch windows frame the hero pieces. One light look, deliberately: no dark theme. */
+:root {
+  --bg: #fbf9f6;
+  --linen: #f3eee6;
+  --surface: #ffffff;
+  --ink: #26211d;
+  --muted: #776e66;
+  --line: #e7e0d5;
+  --brass: #b0915f;
+  --brass-deep: #87683d;
+  --brass-light: #d6bd90;
+  --frame: rgba(176, 145, 95, 0.55);
+  --dark: #241f1c;
+  --dark-2: #352d28;
+  --on-dark: #f3eee6;
+  --on-dark-muted: #b9aea2;
+  --dark-line: rgba(243, 238, 230, 0.16);
+  --scrim: rgba(30, 24, 20, 0.45);
+  --shadow: 0 30px 60px -28px rgba(40, 28, 18, 0.35);
+  --font-display: "Cormorant Garamond", "Cormorant", Garamond, "Times New Roman", serif;
+  --font-body: "Jost", "Futura", "Century Gothic", "Segoe UI", system-ui, sans-serif;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --wrap: 1280px;
+  --header-h: 72px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scrollbar-gutter: stable; }
+html.locked { overflow: hidden; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink); overflow-x: clip;
+  font-family: var(--font-body); font-size: 16px; line-height: 1.65; -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px);
+  z-index: 40; background: var(--bg);
+}
+img { display: block; max-width: 100%; }
+button { font: inherit; color: inherit; }
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--brass-deep); outline-offset: 3px; }
+.wrap { max-width: var(--wrap); margin-inline: auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 500; margin: 0; text-wrap: balance; }
+h1 em, h2 em, h3 em { font-style: italic; color: var(--brass-deep); }
+.dark h2 em, .dark h3 em { color: var(--brass-light); }
+.h2 { font-size: clamp(38px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.01em; }
+.label { font: 500 11px/1.5 var(--font-body); letter-spacing: 0.2em; text-transform: uppercase; color: var(--brass-deep); }
+.dark .label { color: var(--brass-light); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.linen { background: var(--linen); }
+.dark { background: var(--dark); color: var(--on-dark); }
+
+/* Buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 12px; padding: 17px 30px;
+  border: 1px solid var(--ink); background: var(--ink); color: var(--bg); cursor: pointer; text-decoration: none;
+  font: 500 12px/1 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase;
+  transition: background 0.3s, color 0.3s, border-color 0.3s;
+}
+.btn:hover { background: var(--brass-deep); border-color: var(--brass-deep); color: var(--surface); }
+.btn svg { width: 15px; height: 15px; flex: none; transition: transform 0.3s var(--ease); }
+.btn:hover svg { transform: translateX(3px); }
+.btn.ghost { background: transparent; color: var(--ink); }
+.btn.ghost:hover { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.btn.light { background: var(--on-dark); color: var(--dark); border-color: var(--on-dark); }
+.btn.light:hover { background: var(--brass-light); border-color: var(--brass-light); color: var(--dark); }
+.btn.block { width: 100%; }
+.icon-btn {
+  width: 42px; height: 42px; border: 1px solid var(--line); background: var(--surface); color: var(--ink);
+  cursor: pointer; display: grid; place-items: center; flex: none; transition: border-color 0.2s;
+}
+.icon-btn:hover { border-color: var(--ink); }
+.icon-btn svg { width: 16px; height: 16px; }
+
+/* Announcement + header */
+.announce { background: var(--linen); color: var(--brass-deep); }
+.announce .wrap { display: flex; flex-wrap: wrap; justify-content: center; gap: 4px 30px; padding-block: 10px; font: 500 11px/1.5 var(--font-body); letter-spacing: 0.2em; text-transform: uppercase; text-align: center; }
+@media (max-width: 640px) { .announce .wide { display: none; } }
+.site-header {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 30;
+  background: color-mix(in srgb, var(--bg) 90%, transparent);
+  -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+  border-bottom: 1px solid transparent; transition: border-color 0.3s;
+}
+.site-header.scrolled { border-bottom-color: var(--line); }
+.bar { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: 16px; padding-block: 18px; }
+.bar-start { display: flex; align-items: center; min-width: 0; }
+.nav { display: flex; gap: 30px; }
+.nav a, .bag-btn, .menu-btn { font: 500 12px/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; text-decoration: none; }
+.nav a { position: relative; padding-block: 6px; }
+.nav a::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: var(--brass);
+  transform: scaleX(0); transform-origin: left; transition: transform 0.35s var(--ease);
+}
+.nav a:hover::after { transform: scaleX(1); }
+.brand { font-family: var(--font-display); font-size: 25px; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; text-decoration: none; text-align: center; white-space: nowrap; line-height: 1.1; }
+.bar-end { display: flex; justify-content: flex-end; }
+.bag-btn { display: inline-flex; align-items: center; gap: 9px; border: 0; background: none; padding: 6px 0; cursor: pointer; }
+.bag-btn svg { width: 19px; height: 19px; }
+.bag-count {
+  min-width: 20px; height: 20px; padding: 0 6px; border-radius: 10px; background: var(--ink); color: var(--bg);
+  font-size: 11px; letter-spacing: 0; display: inline-grid; place-items: center; font-variant-numeric: tabular-nums;
+}
+.bag-count.bump { animation: bump 0.5s var(--ease); }
+@keyframes bump { 35% { transform: scale(1.4); } }
+.menu-btn { display: none; }
+@media (max-width: 860px) {
+  .menu-btn { display: inline-flex; align-items: center; gap: 8px; border: 0; background: none; padding: 8px 0; cursor: pointer; }
+  .menu-btn svg { width: 18px; height: 18px; }
+  .nav {
+    display: none; position: absolute; left: 0; right: 0; top: 100%; flex-direction: column; gap: 0;
+    background: var(--bg); border-bottom: 1px solid var(--line); box-shadow: var(--shadow);
+    padding: 4px var(--gutter-r) 14px var(--gutter-l);
+  }
+  .site-header.menu-open .nav { display: flex; }
+  .nav a { padding: 16px 0; font-size: 13px; border-bottom: 1px solid var(--line); }
+  .nav a::after { display: none; }
+  .brand { font-size: 17px; letter-spacing: 0.12em; white-space: normal; }
+  .bag-label, .menu-label { display: none; }
+  .bar { padding-block: 14px; }
+}
+
+/* Hero */
+.hero-grid {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(40px, 6vw, 96px); align-items: center;
+  padding-block: clamp(36px, 5vw, 72px) clamp(56px, 7vw, 104px);
+}
+.hero-copy { display: grid; gap: 28px; justify-items: start; min-width: 0; max-width: 580px; }
+.hero h1 { font-size: clamp(50px, 6.2vw, 94px); line-height: 0.98; letter-spacing: -0.015em; }
+.hero h1 em { display: block; }
+.lede { margin: 0; font-size: 18px; color: var(--muted); max-width: 30em; }
+.hero-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-visual { position: relative; isolation: isolate; width: min(100%, 540px); justify-self: end; padding-top: 14px; }
+.hero-visual::before { content: ""; position: absolute; z-index: -1; right: 0; top: 16%; width: 66%; height: 70%; background: var(--linen); }
+.hero-arch {
+  position: relative; width: 80%; margin-left: 6%; aspect-ratio: 4 / 5; max-width: 100%; overflow: hidden;
+  border-radius: 999px 999px 0 0; background: var(--linen); outline: 1px solid var(--frame); outline-offset: 10px;
+}
+.hero-arch img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.4s ease; }
+.hero-arch img.on { opacity: 1; }
+.hero-coin {
+  position: absolute; left: 0; top: 56%; width: 30%; aspect-ratio: 1; border-radius: 50%; overflow: hidden;
+  border: 8px solid var(--bg); box-shadow: 0 0 0 1px var(--frame); background: var(--surface);
+}
+.hero-coin img { width: 100%; height: 100%; object-fit: cover; }
+.hero-meta { width: 80%; margin: 30px 0 0 6%; display: grid; justify-items: center; gap: 14px; text-align: center; }
+.hero-cap { display: grid; justify-items: center; gap: 2px; border: 0; background: none; padding: 0; cursor: pointer; }
+.hero-cap .hc-name { font-family: var(--font-display); font-size: 24px; line-height: 1.15; }
+.hero-cap .hc-price { color: var(--muted); font-size: 14px; }
+.hero-cap:hover .hc-name { color: var(--brass-deep); }
+.hero-dots { display: flex; gap: 8px; }
+.hero-dot { width: 28px; height: 14px; border: 0; padding: 0; cursor: pointer; background: linear-gradient(var(--line), var(--line)) center / 100% 2px no-repeat; transition: background-image 0.3s; }
+.hero-dot[aria-pressed="true"] { background-image: linear-gradient(var(--ink), var(--ink)); }
+@media (max-width: 900px) {
+  .hero-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero-visual { justify-self: center; width: min(100%, 440px); }
+}
+
+/* Trust strip */
+.trust { border-block: 1px solid var(--line); }
+.trust-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.trust-item { display: flex; align-items: center; justify-content: center; gap: 14px; padding: 24px 12px; font: 500 11px/1.5 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; }
+.trust-item + .trust-item { border-left: 1px solid var(--line); }
+.trust-item svg { width: 30px; height: 30px; flex: none; color: var(--brass-deep); }
+@media (max-width: 860px) {
+  .trust-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .trust-item:nth-child(3) { border-left: 0; }
+  .trust-item:nth-child(n + 3) { border-top: 1px solid var(--line); }
+  .trust-item { justify-content: flex-start; padding: 18px 10px; letter-spacing: 0.14em; }
+}
+
+/* Sections */
+.section { padding-block: clamp(76px, 9vw, 132px); }
+[id] { scroll-margin-top: calc(var(--header-h) - 1px); }
+.head { display: grid; gap: 16px; justify-items: center; text-align: center; max-width: 42rem; margin: 0 auto clamp(40px, 5vw, 64px); }
+.head p { margin: 0; color: var(--muted); }
+
+/* Shop by type */
+.arches { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(20px, 2.8vw, 40px); }
+.arch-card { display: grid; gap: 26px; padding: 10px 10px 0; border: 0; background: none; cursor: pointer; text-align: center; min-width: 0; }
+.arch {
+  position: relative; display: block; aspect-ratio: 3 / 4; max-width: 100%; overflow: hidden;
+  border-radius: 999px 999px 0 0; background: var(--surface); outline: 1px solid var(--frame); outline-offset: 8px;
+}
+.arch img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
+.arch-card:hover .arch img, .set-card:hover .arch img { transform: scale(1.05); }
+.arch-meta { display: grid; gap: 4px; justify-items: center; }
+.arch-name { font-family: var(--font-display); font-size: clamp(24px, 2.2vw, 30px); line-height: 1.1; }
+.arch-meta .label { color: var(--muted); font-size: 10px; }
+.arch-card:hover .arch-name { color: var(--brass-deep); }
+@media (max-width: 760px) { .arches { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 44px; } .arch-card { padding: 9px 9px 0; } }
+
+/* Collection */
+.filterbar {
+  position: sticky; top: calc(env(safe-area-inset-top, 0px) + var(--header-h)); z-index: 20;
+  background: color-mix(in srgb, var(--bg) 93%, transparent);
+  -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  border-block: 1px solid var(--line); margin-bottom: clamp(36px, 4vw, 52px);
+}
+.fb { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 0 24px; padding-block: 6px; }
+.fb-types { grid-column: 1; grid-row: 1; display: flex; gap: 22px; }
+.tab {
+  position: relative; border: 0; background: none; padding: 12px 0; cursor: pointer; white-space: nowrap; color: var(--muted);
+  font: 500 12px/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; transition: color 0.2s;
+}
+.tab sup { font-size: 9px; letter-spacing: 0; margin-left: 3px; vertical-align: 5px; }
+.tab::after { content: ""; position: absolute; left: 0; right: 0; bottom: 4px; height: 1px; background: var(--ink); transform: scaleX(0); transition: transform 0.3s var(--ease); }
+.tab:hover { color: var(--ink); }
+.tab[aria-pressed="true"] { color: var(--ink); }
+.tab[aria-pressed="true"]::after { transform: scaleX(1); }
+.fb-colors { grid-column: 1 / -1; grid-row: 2; display: flex; align-items: center; gap: 8px; padding-bottom: 10px; }
+@media (min-width: 1280px) {
+  .fb { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .fb-colors { grid-column: 2; grid-row: 1; justify-content: flex-end; padding-bottom: 0; }
+  .fb-end { grid-column: 3; }
+}
+.fb-colors .tab { margin-right: 6px; }
+.swatch {
+  position: relative; flex: none; width: 20px; height: 20px; border-radius: 50%; border: 0; padding: 0; cursor: pointer;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08); transition: transform 0.2s var(--ease), box-shadow 0.2s;
+}
+.swatch:hover { transform: scale(1.12); }
+.swatch[aria-pressed="true"] { box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.08), 0 0 0 3px var(--bg), 0 0 0 4px var(--ink); }
+.swatch[data-tip]:hover::after {
+  content: attr(data-tip); position: absolute; top: calc(100% + 10px); left: 50%; transform: translateX(-50%); z-index: 5;
+  white-space: nowrap; background: var(--ink); color: var(--bg); font: 500 11px/1 var(--font-body); letter-spacing: 0.06em; padding: 7px 9px; pointer-events: none;
+}
+.swatch.lg { width: 26px; height: 26px; }
+.fb-end { grid-column: 2; grid-row: 1; display: flex; align-items: center; gap: 22px; }
+.count { color: var(--muted); font-size: 13px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.select { display: inline-flex; align-items: center; gap: 8px; }
+.select .label { color: var(--muted); }
+.select select { font: inherit; font-size: 14px; color: var(--ink); background: transparent; border: 1px solid var(--line); padding: 8px 10px; cursor: pointer; }
+@media (max-width: 760px) {
+  .filterbar { position: static; }
+  .fb { grid-template-columns: minmax(0, 1fr); gap: 4px; padding-block: 6px 12px; }
+  .fb-types, .fb-colors, .fb-end { grid-column: 1; grid-row: auto; }
+  .fb-types, .fb-colors {
+    overflow-x: auto; scrollbar-width: none;
+    margin-left: calc(-1 * var(--gutter-l)); margin-right: calc(-1 * var(--gutter-r)); padding-left: var(--gutter-l); padding-right: var(--gutter-r);
+  }
+  .fb-colors { padding-block: 8px; }
+  .fb-types::-webkit-scrollbar, .fb-colors::-webkit-scrollbar { display: none; }
+  .fb-end { justify-content: space-between; padding-top: 6px; }
+}
+
+.grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: clamp(44px, 4.4vw, 64px) clamp(16px, 2vw, 28px); }
+@media (max-width: 1040px) { .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (max-width: 720px) { .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 12px; } }
+.card { display: grid; gap: 18px; align-content: start; min-width: 0; text-align: center; }
+.card-media { position: relative; overflow: hidden; background: var(--linen); }
+.card-open { display: block; width: 100%; aspect-ratio: 4 / 5; max-width: 100%; border: 0; padding: 0; background: none; cursor: pointer; }
+.card-open:focus-visible { outline-offset: -4px; }
+.card-open img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.4s var(--ease); }
+.card:hover .card-open img { transform: scale(1.05); }
+.card-tag { position: absolute; left: 12px; top: 12px; padding: 6px 9px; background: var(--surface); color: var(--ink); font: 500 10px/1 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; pointer-events: none; }
+.card-add {
+  position: absolute; left: 0; right: 0; bottom: 0; display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 16px; border: 0; cursor: pointer; background: color-mix(in srgb, var(--ink) 92%, transparent); color: var(--bg);
+  font: 500 11px/1 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase;
+  transform: translateY(101%); transition: transform 0.45s var(--ease), background 0.2s;
+}
+.card:hover .card-add, .card-add:focus-visible { transform: none; }
+.card-add:hover { background: var(--brass-deep); }
+.card-add svg { display: none; width: 15px; height: 15px; }
+@media (hover: none) {
+  .card-add {
+    left: auto; right: 10px; bottom: 10px; width: 38px; height: 38px; padding: 0; border-radius: 50%;
+    background: var(--surface); color: var(--ink); transform: none; box-shadow: 0 2px 10px rgba(38, 33, 29, 0.16);
+  }
+  .card-add span { display: none; }
+  .card-add svg { display: block; }
+}
+.card-info { display: grid; gap: 4px; justify-items: center; padding-inline: 6px; }
+.card-name { font-family: var(--font-display); font-size: 22px; font-weight: 500; line-height: 1.15; background: none; border: 0; padding: 0; cursor: pointer; text-wrap: balance; }
+.card-name:hover { color: var(--brass-deep); }
+.card-stones { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.5; }
+.price { font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.card .price { margin-top: 4px; }
+@media (max-width: 720px) { .card-name { font-size: 19px; } .card-stones { font-size: 12.5px; } }
+.empty { display: grid; gap: 18px; justify-items: center; padding: 56px 0; text-align: center; color: var(--muted); }
+.empty p { margin: 0; font-family: var(--font-display); font-size: 26px; color: var(--ink); }
+
+/* Sets */
+.sets { padding-block: clamp(76px, 9vw, 132px); overflow: hidden; }
+.sets-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px 40px; margin-bottom: clamp(36px, 4vw, 60px); }
+.sets-head > div:first-child { display: grid; gap: 16px; justify-items: start; max-width: 38rem; min-width: 0; }
+.sets-head p { margin: 0; color: var(--on-dark-muted); }
+.rail-nav { display: flex; gap: 10px; }
+.round-btn {
+  width: 52px; height: 52px; border: 1px solid var(--dark-line); background: transparent; color: var(--on-dark);
+  cursor: pointer; display: grid; place-items: center; transition: background 0.2s, color 0.2s, border-color 0.2s;
+}
+.round-btn svg { width: 18px; height: 18px; }
+.round-btn:hover:not(:disabled) { background: var(--on-dark); color: var(--dark); border-color: var(--on-dark); }
+.round-btn:disabled { opacity: 0.3; cursor: default; }
+.rail {
+  --pad: max(var(--gutter-l), calc((100% - var(--wrap)) / 2 + 16px));
+  display: grid; grid-auto-flow: column; grid-auto-columns: clamp(236px, 24vw, 330px); gap: clamp(24px, 2.8vw, 44px);
+  overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-inline: var(--pad); overscroll-behavior-x: contain;
+  padding: 12px var(--pad) 12px; scrollbar-width: none;
+}
+.rail::-webkit-scrollbar { display: none; }
+.set-card { scroll-snap-align: start; display: grid; gap: 26px; align-content: start; padding: 0; border: 0; background: none; color: inherit; text-align: center; cursor: pointer; min-width: 0; }
+.set-card .arch { background: var(--dark-2); }
+.set-meta { display: grid; gap: 4px; justify-items: center; }
+.set-meta .label { font-size: 10px; }
+.set-name { font-family: var(--font-display); font-size: clamp(24px, 2vw, 28px); line-height: 1.12; }
+.set-inc { color: var(--on-dark-muted); font-size: 14px; }
+.set-price { font-variant-numeric: tabular-nums; font-weight: 500; margin-top: 4px; }
+
+/* Size finder + care */
+.sizer {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: clamp(36px, 5vw, 88px);
+  background: var(--surface); padding: clamp(24px, 4.5vw, 64px);
+}
+.sizer-visual {
+  position: relative; width: 100%; max-width: 470px; aspect-ratio: 1; justify-self: center; border-radius: 50%;
+  background: radial-gradient(circle at 38% 28%, var(--dark-2), var(--dark) 72%);
+  box-shadow: 0 0 0 10px var(--surface), 0 0 0 11px var(--frame), var(--shadow);
+}
+.sizer-visual svg { position: absolute; inset: 0; width: 100%; height: 100%; }
+.ring-wire { fill: none; stroke: var(--brass-light); stroke-width: 1; opacity: 0.5; }
+.ring-center { position: absolute; inset: 0; display: grid; place-content: center; justify-items: center; gap: 4px; color: var(--on-dark); text-align: center; pointer-events: none; }
+.ring-center strong { font-family: var(--font-display); font-weight: 500; font-size: clamp(34px, 3.8vw, 50px); line-height: 1; }
+.ring-center .label { color: var(--brass-light); font-size: 10px; }
+.sizer-controls { display: grid; gap: 24px; justify-items: start; min-width: 0; }
+.sizer-controls > p { margin: 0; color: var(--muted); }
+.field { display: grid; gap: 10px; justify-self: stretch; }
+.field-top { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.field-label { font: 500 11px/1.5 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; }
+.field output { font-size: 15px; font-variant-numeric: tabular-nums; }
+.scale { display: flex; justify-content: space-between; color: var(--muted); font-size: 12px; }
+.range { -webkit-appearance: none; appearance: none; width: 100%; height: 26px; margin: 0; background: transparent; cursor: pointer; --p: 43%; }
+.range:focus-visible { outline: none; }
+.range::-webkit-slider-runnable-track { height: 2px; background: linear-gradient(to right, var(--ink) var(--p), var(--line) var(--p)); }
+.range::-moz-range-track { height: 2px; background: var(--line); }
+.range::-moz-range-progress { height: 2px; background: var(--ink); }
+.range::-webkit-slider-thumb { -webkit-appearance: none; width: 20px; height: 20px; margin-top: -9px; border-radius: 50%; border: 1px solid var(--ink); background: var(--surface); box-shadow: 0 2px 6px rgba(38, 33, 29, 0.2); }
+.range::-moz-range-thumb { width: 18px; height: 18px; border-radius: 50%; border: 1px solid var(--ink); background: var(--surface); box-shadow: 0 2px 6px rgba(38, 33, 29, 0.2); }
+.range:focus-visible::-webkit-slider-thumb { outline: 2px solid var(--brass-deep); outline-offset: 3px; }
+.range:focus-visible::-moz-range-thumb { outline: 2px solid var(--brass-deep); outline-offset: 3px; }
+.seg { display: inline-flex; border: 1px solid var(--line); }
+.seg button {
+  border: 0; background: none; padding: 12px 18px; cursor: pointer; color: var(--muted);
+  font: 500 11px/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; transition: background 0.2s, color 0.2s;
+}
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-checked="true"] { background: var(--ink); color: var(--bg); }
+.stone-pick { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.stone-pick .field-label { margin-right: 6px; }
+.sizer-result { margin: 0; font-size: 17px; max-width: 30em; }
+.sizer-result strong { font-family: var(--font-display); font-weight: 600; font-size: 1.3em; }
+@media (max-width: 860px) { .sizer { grid-template-columns: minmax(0, 1fr); } .sizer-visual { max-width: 360px; } }
+@media (max-width: 420px) { .seg button { padding: 12px 12px; letter-spacing: 0.1em; } }
+.care-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(36px, 6vw, 96px); margin-top: clamp(56px, 6vw, 88px); }
+.care-col { display: grid; gap: 16px; align-content: start; justify-items: start; min-width: 0; }
+.care-col h3 { font-size: clamp(30px, 2.8vw, 38px); line-height: 1.1; }
+.steps, .care-list { list-style: none; margin: 8px 0 0; padding: 0; display: grid; justify-self: stretch; }
+.steps { counter-reset: s; }
+.steps li, .care-list li { display: grid; grid-template-columns: 40px minmax(0, 1fr); gap: 12px; padding-block: 16px; border-top: 1px solid var(--line); color: var(--muted); }
+.steps li { counter-increment: s; }
+.steps li::before { content: counter(s); font-family: var(--font-display); font-style: italic; font-size: 28px; line-height: 0.9; color: var(--brass-deep); }
+.care-list li::before { content: ""; width: 7px; height: 7px; margin: 10px 0 0 4px; transform: rotate(45deg); background: var(--brass); }
+.care-list strong { color: var(--ink); font-weight: 500; }
+@media (max-width: 760px) { .care-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: clamp(40px, 7vw, 120px); align-items: center; }
+.about-media { position: relative; width: 100%; max-width: 480px; justify-self: center; padding: 10px 9% 9% 10px; }
+.about-media .arch { aspect-ratio: 4 / 5.2; }
+.about-coin {
+  position: absolute; right: 0; bottom: 0; width: 40%; aspect-ratio: 1; border-radius: 50%; overflow: hidden;
+  border: 8px solid var(--bg); box-shadow: 0 0 0 1px var(--frame);
+}
+.about-coin img { width: 100%; height: 100%; object-fit: cover; }
+.about-copy { display: grid; gap: 26px; justify-items: start; min-width: 0; }
+.pull { margin: 0; font-family: var(--font-display); font-size: clamp(32px, 3.6vw, 50px); line-height: 1.12; text-wrap: balance; }
+.pull em { color: var(--brass-deep); }
+.about-copy .body { margin: 0; color: var(--muted); font-size: 17px; max-width: 34em; }
+.sig { margin: 0; font-family: var(--font-display); font-style: italic; font-size: 24px; }
+@media (max-width: 860px) { .about-grid { grid-template-columns: minmax(0, 1fr); } }
+
+/* Footer */
+.site-footer { padding-block: clamp(60px, 7vw, 100px) 28px; }
+.foot-cols { display: grid; grid-template-columns: minmax(0, 1.4fr) repeat(2, minmax(0, 1fr)); gap: 32px; padding-bottom: clamp(40px, 6vw, 72px); }
+.foot-col { display: grid; gap: 12px; align-content: start; justify-items: start; }
+.foot-col .label { margin-bottom: 6px; }
+.foot-col a, .foot-col button { color: var(--on-dark); text-decoration: none; background: none; border: 0; padding: 0; cursor: pointer; font-size: 15px; }
+.foot-col a:hover, .foot-col button:hover { color: var(--brass-light); }
+.foot-about p { margin: 0; color: var(--on-dark-muted); max-width: 24em; }
+.foot-brand { padding-block: 32px 18px; border-top: 1px solid var(--dark-line); overflow: hidden; }
+.foot-brand span { display: inline-block; white-space: nowrap; font-family: var(--font-display); font-weight: 500; font-size: 120px; line-height: 1; letter-spacing: 0.02em; }
+.foot-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px 24px; padding-top: 20px; border-top: 1px solid var(--dark-line); color: var(--on-dark-muted); font: 500 11px/1.5 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; }
+.foot-bottom a { text-decoration: none; }
+.foot-bottom a:hover { color: var(--on-dark); }
+@media (max-width: 760px) { .foot-cols { grid-template-columns: repeat(2, minmax(0, 1fr)); } .foot-about { grid-column: 1 / -1; } }
+
+/* Overlays */
+.scrim { position: fixed; inset: 0; z-index: 50; background: var(--scrim); -webkit-backdrop-filter: blur(3px); backdrop-filter: blur(3px); opacity: 0; pointer-events: none; transition: opacity 0.35s; }
+.scrim.open { opacity: 1; pointer-events: auto; }
+.drawer {
+  position: fixed; top: 0; right: 0; bottom: 0; z-index: 60; width: min(440px, 100%); background: var(--bg); box-shadow: var(--shadow);
+  display: grid; grid-template-rows: auto minmax(0, 1fr) auto;
+  padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); padding-right: env(safe-area-inset-right, 0px);
+  transform: translateX(100%); visibility: hidden; transition: transform 0.45s var(--ease), visibility 0s linear 0.45s;
+}
+.drawer.open { transform: none; visibility: visible; transition: transform 0.45s var(--ease); }
+.drawer-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 20px 24px; border-bottom: 1px solid var(--line); }
+.drawer-head h2 { font-size: 30px; display: flex; align-items: baseline; gap: 12px; }
+.drawer-head h2 .label { color: var(--muted); font-size: 10px; }
+.bag-items { overflow-y: auto; padding: 4px 24px; display: grid; align-content: start; overscroll-behavior: contain; }
+.line-item { display: grid; grid-template-columns: 76px minmax(0, 1fr) auto; gap: 16px; padding-block: 18px; border-bottom: 1px solid var(--line); align-items: start; }
+.line-item img { width: 76px; aspect-ratio: 4 / 5; object-fit: cover; background: var(--linen); }
+.line-item .nm { font-family: var(--font-display); font-size: 20px; line-height: 1.15; }
+.line-item .meta { color: var(--muted); font-size: 13px; margin-top: 2px; }
+.line-ctrl { display: flex; align-items: center; gap: 16px; margin-top: 12px; }
+.qty { display: inline-flex; align-items: center; border: 1px solid var(--line); background: var(--surface); }
+.qty button { width: 32px; height: 32px; border: 0; background: none; cursor: pointer; font-size: 16px; line-height: 1; }
+.qty button:hover { background: var(--linen); }
+.qty span { min-width: 22px; text-align: center; font-variant-numeric: tabular-nums; font-size: 14px; }
+.remove { border: 0; background: none; color: var(--muted); cursor: pointer; font-size: 13px; text-decoration: underline; text-underline-offset: 3px; padding: 0; }
+.remove:hover { color: var(--ink); }
+.bag-empty { display: grid; gap: 18px; justify-items: center; text-align: center; padding: 64px 0; color: var(--brass); }
+.bag-empty svg { width: 84px; height: 84px; }
+.bag-empty p { margin: 0; font-family: var(--font-display); font-size: 26px; color: var(--ink); }
+.drawer-foot { display: grid; gap: 14px; padding: 20px 24px 24px; border-top: 1px solid var(--line); background: var(--surface); }
+.subtotal { display: flex; justify-content: space-between; align-items: baseline; font-variant-numeric: tabular-nums; }
+.subtotal span:first-child { font: 500 12px/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; }
+.subtotal span:last-child { font-family: var(--font-display); font-size: 28px; font-weight: 600; }
+.fine { margin: 0; color: var(--muted); font-size: 13px; }
+.note label { display: block; margin-bottom: 6px; color: var(--muted); font-size: 13px; }
+.note textarea { width: 100%; min-height: 66px; resize: vertical; font: inherit; font-size: 14px; color: var(--ink); background: var(--bg); border: 1px solid var(--line); padding: 9px 11px; }
+.checkout-msg { border: 1px solid var(--frame); background: var(--linen); padding: 12px 14px; font-size: 14px; }
+
+.modal {
+  position: fixed; inset: 0; z-index: 70; display: grid; place-items: center; pointer-events: none;
+  padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0s linear 0.3s;
+}
+.modal.open { opacity: 1; visibility: visible; pointer-events: auto; transition: opacity 0.3s; }
+.modal-box {
+  position: relative; display: flex; flex-direction: column; width: min(1080px, 100%); max-height: 100%; background: var(--bg); box-shadow: var(--shadow);
+  transform: translateY(20px); transition: transform 0.5s var(--ease);
+}
+.modal.open .modal-box { transform: none; }
+.modal-scroll { flex: 1 1 auto; min-height: 0; overflow-y: auto; overscroll-behavior: contain; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); }
+.modal-media { position: sticky; top: 0; align-self: start; overflow: hidden; background: var(--linen); cursor: zoom-in; }
+.modal-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; transition: transform 0.25s ease-out; }
+.modal-media.zoom img { transform: scale(2.1); }
+.zoom-hint { position: absolute; left: 14px; bottom: 14px; padding: 7px 10px; background: color-mix(in srgb, var(--surface) 90%, transparent); font: 500 10px/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; pointer-events: none; transition: opacity 0.2s; }
+.modal-media.zoom .zoom-hint { opacity: 0; }
+@media (hover: none) { .zoom-hint { display: none; } .modal-media { cursor: default; } }
+.modal-body { display: grid; gap: 20px; align-content: start; padding: clamp(26px, 4vw, 56px); min-width: 0; }
+.modal-body h2 { font-size: clamp(34px, 3.4vw, 46px); line-height: 1.05; padding-right: 44px; }
+.modal-price { font-size: 20px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.modal-desc { margin: 0; color: var(--muted); font-size: 16.5px; }
+.specs { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 12px 24px; margin: 0; padding-block: 20px; border-block: 1px solid var(--line); font-size: 15px; }
+.specs dt { color: var(--brass-deep); font: 500 10px/1.5 var(--font-body); letter-spacing: 0.18em; text-transform: uppercase; padding-top: 4px; }
+.specs dd { margin: 0; }
+.buy-row { display: flex; gap: 10px; }
+.buy-row .qty button { width: 44px; height: 100%; min-height: 52px; }
+.buy-row .btn { flex: 1; }
+.related { display: grid; gap: 14px; padding-top: 8px; }
+.related-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.related-row button { display: grid; gap: 6px; align-content: start; border: 0; background: none; padding: 0; cursor: pointer; text-align: left; min-width: 0; }
+.related-row img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; background: var(--linen); transition: opacity 0.2s; }
+.related-row button:hover img { opacity: 0.8; }
+.r-name { font-family: var(--font-display); font-size: 15px; line-height: 1.2; }
+.r-price { font-size: 12.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.modal-nav { display: flex; justify-content: space-between; gap: 10px; padding-top: 18px; border-top: 1px solid var(--line); }
+.text-btn { display: inline-flex; align-items: center; gap: 10px; border: 0; background: none; padding: 6px 0; cursor: pointer; color: var(--muted); font: 500 11px/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; }
+.text-btn:hover { color: var(--ink); }
+.text-btn svg { width: 15px; height: 15px; }
+.modal-close { position: absolute; top: 14px; right: 14px; z-index: 3; }
+@media (max-width: 760px) {
+  .modal { place-items: stretch; padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px); }
+  .modal-box { width: 100%; height: 100%; max-height: none; transform: translateY(40px); }
+  .modal-scroll { grid-template-columns: minmax(0, 1fr); }
+  .modal-media { position: relative; }
+  .related-row { gap: 8px; }
+  .r-name { font-size: 14px; }
+}
+
+.toast {
+  position: fixed; left: 0; right: 0; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 90; display: flex; align-items: center; gap: 14px;
+  width: fit-content; max-width: calc(100% - 32px); margin-inline: auto; padding: 8px 20px; background: var(--ink); color: var(--bg); box-shadow: var(--shadow);
+  transform: translateY(24px); opacity: 0; pointer-events: none; transition: opacity 0.3s, transform 0.45s var(--ease);
+}
+.toast.show { opacity: 1; transform: none; pointer-events: auto; }
+.toast.has-img { padding-left: 8px; }
+.toast.has-act { padding-right: 8px; }
+.toast img { width: 40px; height: 50px; object-fit: cover; flex: none; }
+.toast-msg { font-size: 14px; min-width: 0; padding-block: 8px; }
+.toast-act { flex: none; border: 0; background: var(--bg); color: var(--ink); padding: 11px 16px; cursor: pointer; white-space: nowrap; font: 500 11px/1 var(--font-body); letter-spacing: 0.16em; text-transform: uppercase; }
+.fly { position: fixed; z-index: 95; object-fit: cover; pointer-events: none; }
+
+/* Motion */
+@keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } }
+@keyframes fadeIn { from { opacity: 0; } }
+@keyframes drift { from { transform: scale(1.07); } to { transform: scale(1); } }
+@keyframes rise { from { transform: translateY(26px); } }
+@keyframes enter { from { opacity: 0; transform: translateY(18px); } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-copy > * { animation: fadeUp 1s var(--ease) both; }
+  .hero-copy > :nth-child(2) { animation-delay: 0.08s; }
+  .hero-copy > :nth-child(3) { animation-delay: 0.16s; }
+  .hero-copy > :nth-child(4) { animation-delay: 0.24s; }
+  .hero-visual { animation: fadeIn 1.4s ease 0.1s both; }
+  .hero-arch img.on { animation: drift 7s ease-out both; }
+  .rv.in { animation: rise 1s var(--ease) both; animation-delay: var(--d, 0ms); }
+  .enter { animation: enter 0.6s var(--ease) both; animation-delay: var(--d, 0ms); }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; animation: none !important; }
+  html { scroll-behavior: auto; }
+}
+</style>
+</head>
+<body>
+
+<div class="announce">
+  <div class="wrap">
+    <span>Handmade beaded jewelry</span>
+    <span class="wide">Natural stones, pearls &amp; glass</span>
+    <span class="wide">Matching sets &amp; bracelet pairs</span>
+  </div>
+</div>
+
+<header class="site-header" id="header">
+  <div class="wrap bar">
+    <div class="bar-start">
+      <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav" aria-label="Menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3 8h18M3 16h18"/></svg><span class="menu-label">Menu</span>
+      </button>
+      <nav class="nav" id="nav" aria-label="Sections">
+        <a href="#shop">Shop</a>
+        <a href="#sets">Sets</a>
+        <a href="#sizing">Sizing</a>
+        <a href="#about">About</a>
+      </nav>
+    </div>
+    <a class="brand" href="#top" data-shop-name>Your Shop Name</a>
+    <div class="bar-end">
+      <button class="bag-btn" id="bag-open" type="button" aria-haspopup="dialog" aria-label="Open bag, 0 items">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" aria-hidden="true"><path d="M5 8h14l-1.2 12.1a1 1 0 0 1-1 .9H7.2a1 1 0 0 1-1-.9L5 8z"/><path d="M9 10V6.5a3 3 0 0 1 6 0V10"/></svg>
+        <span class="bag-label">Bag</span>
+        <span class="bag-count" id="bag-count">0</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="label">Handmade beaded jewelry</span>
+        <h1>Natural stones, <em>strung by hand</em></h1>
+        <p class="lede">Bracelets, necklaces and matching sets in carnelian, jade, freshwater pearl, turquoise and tourmaline. Every piece is designed and beaded by hand.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#shop">Shop the collection <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a>
+          <a class="btn ghost" href="#sets">Explore sets</a>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-visual">
+        <div class="hero-arch" id="hero-arch"><img class="on" src="img/xl/jewelry-44.jpg" alt="Carnelian Necklace Set on a linen bust"></div>
+        <span class="hero-coin"><img src="img/sm/jewelry-12.jpg" alt="Amethyst and pearl bracelet on white marble"></span>
+        <div class="hero-meta">
+          <button type="button" class="hero-cap" id="hero-cap" data-open="44"><span class="label">No. 44</span><span class="hc-name">Carnelian Necklace Set</span><span class="hc-price">$110</span></button>
+          <div class="hero-dots" id="hero-dots" role="group" aria-label="Featured pieces"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="trust" aria-label="About our jewelry">
+    <div class="wrap trust-row">
+      <div class="trust-item">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M4 12c6 14 26 14 32 0"/><circle cx="6.9" cy="16.6" r="2.8"/><circle cx="12" cy="20.6" r="2.8"/><circle cx="17.6" cy="22.4" r="2.8"/><circle cx="23.4" cy="22.4" r="2.8"/><circle cx="28.9" cy="20.6" r="2.8"/><circle cx="33.1" cy="16.6" r="2.8"/></svg>
+        <span>Strung by hand</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><path d="M12 8h16l6 8-14 17L6 16z"/><path d="M6 16h28M16 8l-3 8 7 17 7-17-3-8"/></svg>
+        <span>Natural stones &amp; pearls</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round" aria-hidden="true"><circle cx="15" cy="18" r="10"/><circle cx="15" cy="18" r="3"/><path d="M15 28h21v-6"/><path d="M19 28v-3M23 28v-2M27 28v-3M31 28v-2"/></svg>
+        <span>Sized to your wrist</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><circle cx="15" cy="20" r="9"/><circle cx="25" cy="20" r="9"/></svg>
+        <span>Made to match</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section linen" id="types">
+    <div class="wrap">
+      <div class="head" data-reveal>
+        <span class="label">Shop by type</span>
+        <h2 class="h2">Find your <em>next favorite</em></h2>
+        <p>Single bracelets for stacking, pairs to share, and necklaces that come with matching pieces.</p>
+      </div>
+      <div class="arches" id="arches"></div>
+    </div>
+  </section>
+
+  <section class="section" id="shop">
+    <div class="wrap head" data-reveal>
+      <span class="label">The collection</span>
+      <h2 class="h2">Every piece, <em>one place</em></h2>
+      <p>Filter by type or stone color, and tap any piece to see the details.</p>
+    </div>
+    <div class="filterbar" id="filterbar">
+      <div class="wrap fb">
+        <div class="fb-types" id="type-filters" role="group" aria-label="Filter by type"></div>
+        <div class="fb-colors" id="color-filters" role="group" aria-label="Filter by stone color"></div>
+        <div class="fb-end">
+          <span class="count" id="result-count" aria-live="polite"></span>
+          <label class="select" for="sort"><span class="label">Sort</span>
+            <select id="sort">
+              <option value="featured">Featured</option>
+              <option value="low">Price, low to high</option>
+              <option value="high">Price, high to low</option>
+              <option value="new">Piece number</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="grid" id="grid"></div>
+      <div class="empty" id="empty" hidden>
+        <p>No pieces match that combination.</p>
+        <button class="btn ghost" type="button" id="clear-filters">Show all pieces</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark sets" id="sets">
+    <div class="wrap sets-head" data-reveal>
+      <div>
+        <span class="label">Made to match</span>
+        <h2 class="h2">Complete <em>sets</em></h2>
+        <p>A necklace with its matching bracelet, and sometimes earrings too, so the whole look arrives together.</p>
+      </div>
+      <div class="rail-nav">
+        <button class="round-btn" type="button" id="rail-prev" aria-label="Previous sets"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4"/></svg></button>
+        <button class="round-btn" type="button" id="rail-next" aria-label="More sets"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+      </div>
+    </div>
+    <div class="rail" id="rail" role="group" aria-label="Sets"></div>
+  </section>
+
+  <section class="section linen" id="sizing">
+    <div class="wrap">
+      <div class="sizer" data-reveal>
+        <div class="sizer-visual">
+          <svg id="ring" viewBox="0 0 320 320" role="img" aria-label="Bracelet preview"></svg>
+          <div class="ring-center" aria-hidden="true">
+            <span class="label">Bracelet</span>
+            <strong id="ring-len">7.25 in</strong>
+            <span class="label" id="ring-cm">18.4 cm</span>
+          </div>
+        </div>
+        <div class="sizer-controls">
+          <span class="label">Bracelet size finder</span>
+          <h2 class="h2">Find your <em>fit</em></h2>
+          <p>Slide to your wrist size and choose how loose you like it to sit.</p>
+          <div class="field">
+            <div class="field-top"><label class="field-label" for="wrist">Your wrist</label><output id="wrist-out" for="wrist">6.5 in · 16.5 cm</output></div>
+            <input class="range" type="range" id="wrist" min="5" max="8.5" step="0.25" value="6.5">
+            <div class="scale" aria-hidden="true"><span>5 in</span><span>6.75 in</span><span>8.5 in</span></div>
+          </div>
+          <div class="seg" id="fit" role="radiogroup" aria-label="Fit">
+            <button type="button" role="radio" aria-checked="false" data-fit="0.5">Snug</button>
+            <button type="button" role="radio" aria-checked="true" data-fit="0.75">Comfortable</button>
+            <button type="button" role="radio" aria-checked="false" data-fit="1">Loose</button>
+          </div>
+          <div class="stone-pick" id="stone-pick" role="group" aria-label="Preview stone"></div>
+          <p class="sizer-result" id="sizer-result"></p>
+          <button class="btn" type="button" id="size-note">Add my size to the order note</button>
+        </div>
+      </div>
+      <div class="care-grid" id="care">
+        <div class="care-col" data-reveal>
+          <span class="label">How to measure</span>
+          <h3>Measure your wrist</h3>
+          <ol class="steps">
+            <li>Wrap a soft tape measure, or a strip of paper, around your wrist just above the bone.</li>
+            <li>Mark where it meets, then measure that length in inches.</li>
+            <li>Enter it in the size finder above and choose your fit.</li>
+          </ol>
+        </div>
+        <div class="care-col" data-reveal data-delay="120">
+          <span class="label">Care</span>
+          <h3>Keep the shine</h3>
+          <ul class="care-list">
+            <li><span><strong>Put it on last.</strong> Lotion, perfume and hairspray can dull pearls and porous stones like turquoise.</span></li>
+            <li><span><strong>Take it off for water.</strong> Swimming, showers and dishes weaken stringing wire and cord over time.</span></li>
+            <li><span><strong>Store pieces apart.</strong> Harder stones can scratch softer ones, so keep each piece in its own pouch.</span></li>
+            <li><span><strong>Wipe, don't soak.</strong> A soft dry cloth after wearing is all most pieces need.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <div class="wrap about-grid">
+      <div class="about-media" data-reveal>
+        <span class="arch"><img src="img/jewelry-26.jpg" alt="A raw carnelian and gold chain bracelet held up in a hand" loading="lazy"></span>
+        <span class="about-coin"><img src="img/sm/jewelry-02.jpg" alt="" loading="lazy"></span>
+      </div>
+      <div class="about-copy" data-reveal data-delay="120">
+        <span class="label">About the shop</span>
+        <p class="pull">Every strand starts with a handful of stones, <em>chosen for their color.</em></p>
+        <p class="body">Then each one is strung, spaced and finished by hand. Lampwork hearts, freshwater pearls and gold-tone spacers turn simple strands into pieces you'll want to stack, gift and keep.</p>
+        <p class="sig">— <span data-shop-name>Your Shop Name</span></p>
+        <a class="btn ghost" href="#shop">Browse the collection</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer dark">
+  <div class="wrap">
+    <div class="foot-cols">
+      <div class="foot-col foot-about">
+        <span class="label">The shop</span>
+        <p>Handmade beaded jewelry in natural stones, freshwater pearls and glass.</p>
+      </div>
+      <div class="foot-col">
+        <span class="label">Shop</span>
+        <button type="button" data-cat="bracelet">Bracelets</button>
+        <button type="button" data-cat="pair">Bracelet pairs</button>
+        <button type="button" data-cat="necklace">Necklaces</button>
+        <button type="button" data-cat="set">Sets</button>
+      </div>
+      <div class="foot-col">
+        <span class="label">Help</span>
+        <a href="#sizing">Size finder</a>
+        <a href="#care">Care</a>
+        <button type="button" data-bag>Your bag</button>
+      </div>
+    </div>
+    <div class="foot-brand" id="foot-brand"><span id="foot-brand-text" data-shop-name>Your Shop Name</span></div>
+    <div class="foot-bottom">
+      <span id="year"></span>
+      <span>Handmade gemstone jewelry</span>
+      <a href="#top">Back to top</a>
+    </div>
+  </div>
+</footer>
+
+<div class="scrim" id="scrim"></div>
+
+<aside class="drawer" id="drawer" role="dialog" aria-modal="true" aria-labelledby="bag-title" aria-hidden="true">
+  <div class="drawer-head">
+    <h2 id="bag-title">Your bag <span class="label" id="bag-n"></span></h2>
+    <button class="icon-btn" type="button" id="bag-close" aria-label="Close bag"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg></button>
+  </div>
+  <div class="bag-items" id="bag-items"></div>
+  <div class="drawer-foot" id="bag-foot">
+    <div class="subtotal"><span>Subtotal</span><span id="subtotal">$0</span></div>
+    <p class="fine">Shipping and taxes are calculated at checkout.</p>
+    <div class="note">
+      <label for="order-note">Order note (wrist size, gift message)</label>
+      <textarea id="order-note" placeholder="e.g. 6.5 in wrist, gift wrap please"></textarea>
+    </div>
+    <button class="btn block" type="button" id="checkout">Check out</button>
+    <div class="checkout-msg" id="checkout-msg" hidden>Online checkout is coming soon. Your bag is saved on this device, so your picks will still be here.</div>
+  </div>
+</aside>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="m-name" aria-hidden="true">
+  <div class="modal-box">
+    <button class="icon-btn modal-close" type="button" id="modal-close" aria-label="Close"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M3.5 3.5l9 9M12.5 3.5l-9 9"/></svg></button>
+    <div class="modal-scroll" id="modal-scroll">
+      <div class="modal-media" id="m-media"><img id="m-img" src="img/jewelry-44.jpg" alt=""><span class="zoom-hint">Hover to zoom</span></div>
+      <div class="modal-body">
+        <span class="label" id="m-no"></span>
+        <h2 id="m-name"></h2>
+        <div class="modal-price" id="m-price"></div>
+        <p class="modal-desc" id="m-desc"></p>
+        <dl class="specs" id="m-specs"></dl>
+        <div class="buy-row">
+          <div class="qty" role="group" aria-label="Quantity">
+            <button type="button" id="m-minus" aria-label="Decrease quantity">−</button>
+            <span id="m-qty">1</span>
+            <button type="button" id="m-plus" aria-label="Increase quantity">+</button>
+          </div>
+          <button class="btn" type="button" id="m-add">Add to bag</button>
+        </div>
+        <p class="fine">Handmade, so small variations in stone color and pattern are part of each piece.</p>
+        <div class="related">
+          <span class="label">Pairs well with</span>
+          <div class="related-row" id="m-related"></div>
+        </div>
+        <div class="modal-nav">
+          <button class="text-btn" type="button" id="m-prev"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M14 8H3M7 4L3 8l4 4"/></svg>Previous</button>
+          <button class="text-btn" type="button" id="m-next">Next<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const SHOP_NAME = "Your Shop Name";
+
+// type: bracelet | pair | necklace | set. colors are stone-color families for the color filter.
+const PRODUCTS = [
+  { id: "01", name: "Sage Drop Necklace & Earrings", type: "set", colors: ["green"], price: 78, stones: "Green stone drops", metal: "Gold tone", closure: "Lobster clasp, hook earrings", includes: "Necklace and earrings", desc: "Green stone drops spaced along a fine gold-tone chain, with matching drop earrings." },
+  { id: "02", name: "Cherry Quartz & Pearl Bracelet", type: "bracelet", colors: ["pink"], price: 34, stones: "Cherry quartz chips, freshwater pearls", metal: "Gold tone", closure: "Lobster clasp", desc: "Soft pink quartz chips with a run of four freshwater pearls and tiny gold spacers." },
+  { id: "03", name: "Gemstone Chip & Pearl Bracelet", type: "bracelet", colors: ["multi", "white"], price: 38, stones: "Lapis, malachite, aventurine, tiger's eye, onyx, pearls", metal: "Gold tone", closure: "Lobster clasp", desc: "Clusters of mixed gemstone chips set between nine freshwater pearls." },
+  { id: "04", name: "Aventurine & Pearl Bracelet", type: "bracelet", colors: ["green", "white"], price: 36, stones: "Green aventurine, freshwater pearls", metal: "Gold tone with silver accent bead", closure: "Lobster clasp", desc: "Polished green aventurine rounds meeting a section of freshwater pearls at a patterned silver bead." },
+  { id: "05", name: "Rainbow Tiger's Eye Bracelet", type: "bracelet", colors: ["multi", "pink"], price: 34, stones: "Dyed tiger's eye", metal: "Gold tone", closure: "Lobster clasp", desc: "Fifteen rounds of tiger's eye in rose, teal and gold, each one with its own chatoyant streaks." },
+  { id: "06", name: "Faceted Aventurine & Gold Bracelet", type: "bracelet", colors: ["green", "gold"], price: 36, stones: "Faceted green aventurine, gold hematite", metal: "Gold tone", closure: "Lobster clasp", desc: "Faceted mint aventurine alternating with mirror-bright gold hematite." },
+  { id: "07", name: "Lava & Onyx Bracelet Pair", type: "pair", colors: ["black"], price: 48, stones: "Lava stone, black onyx", metal: "Gold and silver tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "Two matte-and-gloss bracelets that mix porous lava stone with polished onyx. Wear them stacked or share one." },
+  { id: "08", name: "Hematite Cube Bracelet", type: "bracelet", colors: ["black"], price: 30, stones: "Hematite cubes, clear glass", metal: "Silver tone", closure: "Lobster clasp", desc: "Gunmetal hematite cubes separated by clear glass rounds." },
+  { id: "09", name: "Red Stone & Jasper Bracelet", type: "bracelet", colors: ["red"], price: 36, stones: "Red stone rounds, picture jasper", metal: "Antique bronze tubes", closure: "Stretch fit", desc: "Speckled red rounds with earthy jasper accents and two carved bronze tube beads." },
+  { id: "10", name: "Mint Cat's Eye Bracelet", type: "bracelet", colors: ["green", "white"], price: 30, stones: "Cat's eye glass", metal: "Gold tone", closure: "Lobster clasp", desc: "Glowing cat's eye glass in mint, jade green, white and one bright aqua accent." },
+  { id: "11", name: "Apatite & Turquoise Bracelet", type: "bracelet", colors: ["blue"], price: 38, stones: "Apatite, turquoise chips, malachite, tiger's eye", metal: "Silver tone spacers", closure: "Lobster clasp", desc: "Ocean-blue apatite rounds framed by turquoise chips, malachite and tiger's eye." },
+  { id: "12", name: "Amethyst & Pearl Toggle Bracelet", type: "bracelet", colors: ["purple", "white"], price: 42, stones: "Amethyst, freshwater pearls", metal: "Antique silver", closure: "Toggle clasp with dangle", desc: "Half amethyst, half pearl, finished with an ornate silver toggle and a small amethyst and pearl dangle." },
+  { id: "13", name: "Sunny Heart Bracelet Pair", type: "pair", colors: ["blue", "yellow"], price: 52, stones: "Lampwork heart, yellow stone, turquoise chips, crystal", metal: "Gold tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "A dotted turquoise lampwork heart between bright yellow stones, paired with a turquoise chip bracelet." },
+  { id: "14", name: "Raspberry Jade Toggle Bracelet", type: "bracelet", colors: ["pink", "red"], price: 32, stones: "Dyed jade", metal: "Antique silver", closure: "Toggle clasp", desc: "Raspberry-pink jade rounds with dark rondelle spacers and a detailed silver toggle." },
+  { id: "15", name: "Red Heart Bracelet Pair", type: "pair", colors: ["red", "pink"], price: 52, stones: "Lampwork heart, red discs, quartz chips, crystal", metal: "Gold and silver tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "A gold-dotted lampwork heart with red discs and quartz chips, plus a delicate red crystal strand." },
+  { id: "16", name: "Teal Tiger's Eye Toggle Bracelet", type: "bracelet", colors: ["blue"], price: 34, stones: "Matte teal tiger's eye", metal: "Silver tone", closure: "Toggle clasp", desc: "Frosted teal tiger's eye rounds that flash when they catch the light." },
+  { id: "17", name: "Garden Heart Bracelet Pair", type: "pair", colors: ["green"], price: 58, stones: "Lampwork heart and flower, moss agate, jade, cat's eye", metal: "Gold tone", closure: "Fold-over clasps", includes: "Two bracelets", desc: "A green lampwork heart and a painted flower bead, surrounded by moss agate and soft green jade." },
+  { id: "18", name: "Evil Eye Bracelet Pair", type: "pair", colors: ["blue"], price: 54, stones: "Evil eye connectors, pearls, glass, turquoise chips", metal: "Silver tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "A crystal evil eye with turtle charms, paired with a daisy evil eye strand of turquoise chips and pearls." },
+  { id: "19", name: "Rose & Onyx Bracelet Pair", type: "pair", colors: ["pink", "black"], price: 44, stones: "Pink stone, onyx, seed beads", metal: "Gold tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "Rosy pink stone and glossy onyx with a fine red seed-bead companion strand." },
+  { id: "20", name: "Seaside Lampwork Bracelet Pair", type: "pair", colors: ["multi", "blue"], price: 56, stones: "Lampwork bead, coral, crystal, pearls", metal: "Gold tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "A polka-dot aqua lampwork bead with coral, faceted crystal and pearls in every color of the shore." },
+  { id: "21", name: "Lucky Cat Bracelet Pair", type: "pair", colors: ["red", "yellow"], price: 56, stones: "Lampwork lucky cat, coral, crystal, jade", metal: "Gold tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "A tiny lucky cat bead and a spotted lampwork centerpiece in sunny reds and yellows." },
+  { id: "22", name: "Koi Bracelet Pair", type: "pair", colors: ["orange", "green"], price: 56, stones: "Lampwork koi, coral, malachite, crystal", metal: "Gold tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "A playful lampwork koi and a glossy orange tube bead with coral and malachite chips." },
+  { id: "23", name: "Ladybug Red & Onyx Bracelet Pair", type: "pair", colors: ["red", "black"], price: 52, stones: "Lampwork beads, red stone, onyx chips", metal: "Gold tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "Swirled red lampwork beads and red stone squares set against black onyx chips." },
+  { id: "24", name: "Jasper Strand with Aventurine", type: "necklace", colors: ["green"], price: 58, stones: "Green jasper, aventurine centerpiece", metal: "Gold tone", closure: "Lobster clasp", desc: "Mossy green jasper rounds spaced with gold, centered on a smooth aventurine nugget." },
+  { id: "25", name: "Unakite Heart Bracelet", type: "bracelet", colors: ["green", "pink"], price: 38, stones: "Unakite hearts", metal: "Gold tone", closure: "Toggle clasp", desc: "Eleven puffed unakite hearts in olive and salmon pink." },
+  { id: "26", name: "Raw Carnelian Chain Bracelet", type: "bracelet", colors: ["orange"], price: 44, stones: "Raw carnelian", metal: "Gold tone chain", closure: "Lobster clasp", desc: "Four rough-cut carnelian pieces linked with chunky gold-tone chain." },
+  { id: "27", name: "Carnelian Oval Bracelet", type: "bracelet", colors: ["orange"], price: 38, stones: "Carnelian", metal: "Gold tone", closure: "Lobster clasp", desc: "Eight glossy carnelian ovals in bright tangerine." },
+  { id: "28", name: "Deep Carnelian Bracelet", type: "bracelet", colors: ["red", "orange"], price: 40, stones: "Carnelian", metal: "Gold tone", closure: "Lobster clasp", desc: "Eight deep red carnelian ovals with double gold spacers." },
+  { id: "29", name: "Green Nugget Bracelet", type: "bracelet", colors: ["green"], price: 40, stones: "Tumbled green stone", metal: "Gold tone tubes", closure: "Lobster clasp", desc: "Five chunky tumbled green stones joined with slim gold tubes." },
+  { id: "30", name: "Turquoise & Tourmaline Bracelet Pair", type: "pair", colors: ["blue", "black"], price: 54, stones: "Turquoise, raw black tourmaline", metal: "Silver and gold tone", closure: "Lobster clasps", includes: "Two bracelets", desc: "Veined turquoise nuggets paired with a bold raw black tourmaline bracelet." },
+  { id: "31", name: "Raw Black Tourmaline Bracelet", type: "bracelet", colors: ["black"], price: 42, stones: "Raw black tourmaline", metal: "Gold tone", closure: "Lobster clasp", desc: "Thirteen raw tourmaline crystals with natural striations." },
+  { id: "32", name: "Freshwater Pearl Necklace", type: "necklace", colors: ["white"], price: 62, stones: "Freshwater pearls", metal: "Gold tone accents", closure: "Lobster clasp", desc: "Creamy freshwater pearls with a few gold accent beads." },
+  { id: "33", name: "Classic Pearl Necklace", type: "necklace", colors: ["white"], price: 62, stones: "Freshwater pearls", metal: "Gold tone", closure: "Lobster clasp", desc: "A simple strand of white freshwater pearls that goes with everything." },
+  { id: "34", name: "Orange Agate Necklace", type: "necklace", colors: ["orange"], price: 58, stones: "Faceted orange agate", metal: "Gold tone", closure: "Lobster clasp", desc: "Faceted orange agate rounds spaced along gold-tone links." },
+  { id: "35", name: "Pearl & Lampwork Set", type: "set", colors: ["white", "blue"], price: 84, stones: "Freshwater pearls, lampwork beads", metal: "Gold tone", closure: "Lobster clasps", includes: "Necklace and bracelet", desc: "Pearl necklace and bracelet, each with an aqua lampwork bead." },
+  { id: "36", name: "Faceted Carnelian Bracelet", type: "bracelet", colors: ["orange", "red"], price: 38, stones: "Faceted carnelian", metal: "Gold tone", closure: "Lobster clasp", desc: "Faceted carnelian ovals from honey orange to deep red." },
+  { id: "37", name: "Howlite Cross Set", type: "set", colors: ["white", "black"], price: 86, stones: "Howlite, hematite, cross pendant", metal: "Silver tone", closure: "Lobster clasps", includes: "Necklace and bracelet", desc: "A long howlite and hematite necklace with a cross pendant, plus a matching bracelet." },
+  { id: "38", name: "Pink Agate Lariat", type: "necklace", colors: ["pink"], price: 64, stones: "Faceted pink agate", metal: "Gold tone", closure: "Lariat, slips through the loop", desc: "A lariat of faceted pink agate with two beaded tails." },
+  { id: "39", name: "Long Pink Agate Lariat", type: "necklace", colors: ["pink"], price: 64, stones: "Faceted pink agate", metal: "Gold tone", closure: "Lariat, slips through the loop", desc: "A longer pink agate lariat with a single dropped tail." },
+  { id: "40", name: "Jade & Gold Chain Set", type: "set", colors: ["green", "gold"], price: 88, stones: "Jade", metal: "Gold tone chain", closure: "Toggle clasp", includes: "Necklace and bracelet", desc: "Jade beads meet a run of gold chain, with a matching jade bracelet." },
+  { id: "41", name: "Gold & Pearl Heart Bracelet", type: "bracelet", colors: ["gold", "white"], price: 34, stones: "Gold-tone beads, pearls, shell heart", metal: "Gold tone", closure: "Lobster clasp", desc: "Gold-tone beads and small pearls around a mother-of-pearl heart." },
+  { id: "42", name: "Gold Bead Bracelet", type: "bracelet", colors: ["gold"], price: 30, stones: "Gold-tone beads", metal: "Gold tone", closure: "Lobster clasp", desc: "Polished gold-tone rounds for everyday stacking." },
+  { id: "43", name: "Pink Shell Bracelet Pair", type: "pair", colors: ["pink"], price: 44, stones: "Dyed shell, flower and leaf shell beads", metal: "Gold tone tubes", closure: "Lobster clasps", includes: "Two bracelets", desc: "Hot-pink shell chips with a shell flower on one bracelet and carved leaves on the other." },
+  { id: "44", name: "Carnelian Necklace Set", type: "set", colors: ["orange", "red"], price: 110, stones: "Carnelian", metal: "Gold tone", closure: "Lobster clasps, hook earrings", includes: "Necklace, bracelet and earrings", desc: "A carnelian necklace, bracelet and drop earrings made to wear together." },
+  { id: "45", name: "Red Agate Necklace Set", type: "set", colors: ["red"], price: 110, stones: "Red agate", metal: "Gold tone", closure: "Lobster clasps, hook earrings", includes: "Necklace, bracelet and earrings", desc: "Deep red agate necklace, bracelet and earrings in a matching set." },
+  { id: "46", name: "Mother-of-Pearl Necklace Set", type: "set", colors: ["white"], price: 110, stones: "Mother-of-pearl", metal: "Gold tone", closure: "Lobster clasps, hook earrings", includes: "Necklace, bracelet and earrings", desc: "Luminous mother-of-pearl rounds with a pendant drop, matching bracelet and earrings." },
+  { id: "47", name: "Teal Tiger's Eye & Crystal Bracelet Pair", type: "pair", colors: ["blue"], price: 52, stones: "Teal tiger's eye, matte teal focal beads, light blue crystal", metal: "Gold tone tubes and spacers", closure: "Lobster clasps", includes: "Two bracelets", desc: "Two teal tiger's eye bracelets, each centered on a large matte teal bead and spaced with gold tubes and light blue crystals. Wear them stacked or share one." }
+];
+
+const FEATURED = ["44", "20", "47", "17", "31", "12", "46", "18", "26", "03", "22", "40", "13"];
+const TYPES = [
+  { key: "all", label: "All", one: "piece", plural: "pieces" },
+  { key: "bracelet", label: "Bracelets", one: "bracelet", plural: "bracelets" },
+  { key: "pair", label: "Bracelet pairs", one: "bracelet pair", plural: "bracelet pairs" },
+  { key: "necklace", label: "Necklaces", one: "necklace", plural: "necklaces" },
+  { key: "set", label: "Sets", one: "set", plural: "sets" }
+];
+const COLORS = [
+  { key: "green", label: "Green", a: "#9ccbb0", b: "#3d7a5b" },
+  { key: "blue", label: "Blue & turquoise", a: "#93d6dc", b: "#2f7f9c" },
+  { key: "red", label: "Red", a: "#e08583", b: "#9b2c34" },
+  { key: "orange", label: "Orange", a: "#f4b47c", b: "#c45e2a" },
+  { key: "pink", label: "Pink", a: "#f3bfd2", b: "#c25d8c" },
+  { key: "purple", label: "Purple", a: "#c7b2e6", b: "#6c4a9e" },
+  { key: "yellow", label: "Yellow", a: "#f6e59a", b: "#cfa63a" },
+  { key: "black", label: "Black", a: "#7b7f83", b: "#1d1f22" },
+  { key: "white", label: "White & pearl", a: "#ffffff", b: "#ddd5c8" },
+  { key: "gold", label: "Gold", a: "#f2deaa", b: "#ad8a3e" },
+  { key: "multi", label: "Multicolor", a: "", b: "" }
+];
+const TYPE_LABEL = { bracelet: "Bracelet", pair: "Bracelet pair", necklace: "Necklace", set: "Set" };
+// Where each photo was taken, for image descriptions.
+const SETTING = { linen: ["01", "44", "45", "46"], velvet: ["32", "33", "34", "35", "37", "38", "39", "40"], hand: ["26", "27", "28"] };
+const HERO = ["44", "01", "45"];
+const CATS = [{ key: "bracelet", img: "16" }, { key: "pair", img: "20" }, { key: "necklace", img: "38" }, { key: "set", img: "46" }];
+const SET_ORDER = ["44", "46", "45", "40", "37", "35", "01"];
+// Stone shades for the size finder's bracelet: [highlight, body, shadow] per bead variant.
+const RING_STONES = [
+  { key: "carnelian", label: "Carnelian", tones: [["#f8ab74", "#cf4d1d", "#6b1d05"], ["#f4bb8a", "#da652c", "#7d2a0a"], ["#ef9862", "#b8411a", "#5c1804"]] },
+  { key: "jade", label: "Jade", tones: [["#b5e3c9", "#3f8a64", "#123d29"], ["#c7ead6", "#55a078", "#174a32"], ["#9fd3b5", "#2f7653", "#0e3322"]] },
+  { key: "pearl", label: "Freshwater pearl", tones: [["#ffffff", "#ece5d7", "#a99f8c"], ["#fffdf6", "#f1e7d5", "#b3a690"], ["#ffffff", "#e3ddd0", "#9d9483"]] },
+  { key: "turquoise", label: "Turquoise", tones: [["#b4f0f1", "#30b2bc", "#0d5a66"], ["#c4f4f2", "#45c1c4", "#116a72"], ["#9fe6ea", "#239aa6", "#0a4b56"]] },
+  { key: "amethyst", label: "Amethyst", tones: [["#dccaf4", "#8a5cc7", "#3b1a6b"], ["#e6d6f8", "#9b70d2", "#47227a"], ["#cdb5ee", "#7648b5", "#30135c"]] },
+  { key: "tourmaline", label: "Black tourmaline", tones: [["#8a8f94", "#2a2d31", "#08090a"], ["#9a9fa4", "#33373c", "#0c0d0f"], ["#7a7f84", "#222529", "#050607"]] }
+];
+
+const ICON = {
+  plus: '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M8 3v10M3 8h10"/></svg>'
+};
+
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s).replace(/[&<>"']/g, (ch) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
+const money = (n) => "$" + n.toFixed(0);
+const fmt = (n) => String(+n.toFixed(2));
+const lg = (id) => `img/jewelry-${id}.jpg`;
+const sm = (id) => `img/sm/jewelry-${id}.jpg`;
+const srcset = (id) => `${sm(id)} 400w, ${lg(id)} 800w`;
+const byId = Object.fromEntries(PRODUCTS.map((p) => [p.id, p]));
+const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const state = { type: "all", color: null, sort: "featured", modalId: null, modalQty: 1, bag: loadBag(), note: loadNote() };
+
+function loadBag() {
+  try { const raw = localStorage.getItem("gem-shop-bag"); const bag = raw ? JSON.parse(raw) : {}; return bag && typeof bag === "object" ? bag : {}; }
+  catch (e) { return {}; }
+}
+function saveBag() { try { localStorage.setItem("gem-shop-bag", JSON.stringify(state.bag)); } catch (e) { /* storage unavailable */ } }
+function loadNote() { try { return localStorage.getItem("gem-shop-note") || ""; } catch (e) { return ""; } }
+function saveNote() { try { localStorage.setItem("gem-shop-note", state.note); } catch (e) { /* storage unavailable */ } }
+
+function photoAlt(p) {
+  const where = SETTING.linen.includes(p.id) ? "on a linen bust" : SETTING.velvet.includes(p.id) ? "on a black velvet bust"
+    : SETTING.hand.includes(p.id) ? "held in a hand" : "on white marble";
+  return `${p.name} ${where}`;
+}
+function swatchBg(key) {
+  const c = COLORS.find((x) => x.key === key);
+  if (!c || c.key === "multi") return "background: conic-gradient(from 20deg, #e08583, #f4b47c, #f6e59a, #9ccbb0, #93d6dc, #c7b2e6, #f3bfd2, #e08583);";
+  return `background: radial-gradient(circle at 35% 30%, ${c.a}, ${c.b} 85%);`;
+}
+function rank(p) { const i = FEATURED.indexOf(p.id); return i === -1 ? 100 + Number(p.id) : i; }
+
+// Scroll reveal: content is visible at rest; sections below the fold rise in as they arrive.
+const io = "IntersectionObserver" in window && !reduce ? new IntersectionObserver((entries) => {
+  entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+}, { rootMargin: "0px 0px 60px 0px" }) : null;
+function reveal(el, delay = 0) {
+  if (!io || el.getBoundingClientRect().top < innerHeight) return;
+  el.classList.add("rv"); el.style.setProperty("--d", delay + "ms"); io.observe(el);
+}
+
+/* Static sections */
+document.querySelectorAll("[data-shop-name]").forEach((el) => { el.textContent = SHOP_NAME; });
+$("#year").textContent = "© " + new Date().getFullYear() + " " + SHOP_NAME;
+
+let heroI = 0, heroTimer = null;
+function renderHero() {
+  $("#hero-arch").innerHTML = HERO.map((id, i) => `<img class="${i === 0 ? "on" : ""}" src="img/xl/jewelry-${id}.jpg" alt="${esc(photoAlt(byId[id]))}">`).join("");
+  $("#hero-dots").innerHTML = HERO.map((id, i) => `<button type="button" class="hero-dot" data-hero="${i}" aria-label="Show ${esc(byId[id].name)}" aria-pressed="${i === 0}"></button>`).join("");
+}
+function showHero(i) {
+  heroI = (i + HERO.length) % HERO.length;
+  const id = HERO[heroI], p = byId[id];
+  [...$("#hero-arch").children].forEach((img, k) => img.classList.toggle("on", k === heroI));
+  document.querySelectorAll(".hero-dot").forEach((b, k) => b.setAttribute("aria-pressed", k === heroI));
+  const cap = $("#hero-cap");
+  cap.dataset.open = id;
+  cap.innerHTML = `<span class="label">No. ${id}</span><span class="hc-name">${esc(p.name)}</span><span class="hc-price">${money(p.price)}</span>`;
+  if (!reduce && cap.animate) cap.animate([{ opacity: 0, transform: "translateY(6px)" }, { opacity: 1, transform: "none" }], { duration: 600, easing: "ease-out" });
+}
+function startHero() { if (reduce) return; clearInterval(heroTimer); heroTimer = setInterval(() => showHero(heroI + 1), 6000); }
+function stopHero() { clearInterval(heroTimer); heroTimer = null; }
+
+function renderArches() {
+  $("#arches").innerHTML = CATS.map(({ key, img }) => {
+    const t = TYPES.find((x) => x.key === key);
+    const items = PRODUCTS.filter((p) => p.type === key);
+    return `<button type="button" class="arch-card" data-cat="${key}">
+      <span class="arch"><img src="${lg(img)}" srcset="${srcset(img)}" sizes="(max-width: 760px) 45vw, 300px" alt="" loading="lazy"></span>
+      <span class="arch-meta"><span class="arch-name">${t.label}</span><span class="label">${items.length} pieces · from ${money(Math.min(...items.map((p) => p.price)))}</span></span>
+    </button>`;
+  }).join("");
+  [...$("#arches").children].forEach((el, i) => reveal(el, i * 90));
+}
+
+function renderRail() {
+  $("#rail").innerHTML = SET_ORDER.map((id) => {
+    const p = byId[id];
+    return `<button type="button" class="set-card" data-open="${id}" aria-label="View ${esc(p.name)}">
+      <span class="arch"><img src="${lg(id)}" srcset="${srcset(id)}" sizes="(max-width: 760px) 240px, 330px" alt="" loading="lazy"></span>
+      <span class="set-meta"><span class="label">No. ${id}</span><span class="set-name">${esc(p.name)}</span><span class="set-inc">${esc(p.includes)}</span><span class="set-price">${money(p.price)}</span></span>
+    </button>`;
+  }).join("");
+  [...$("#rail").children].forEach((el, i) => reveal(el, i * 90));
+  railButtons();
+}
+function railStep(dir) {
+  const rail = $("#rail"), card = rail.querySelector(".set-card");
+  const gap = parseFloat(getComputedStyle(rail).columnGap) || 24;
+  rail.scrollBy({ left: dir * (card.offsetWidth + gap), behavior: reduce ? "auto" : "smooth" });
+}
+function railButtons() {
+  const rail = $("#rail");
+  $("#rail-prev").disabled = rail.scrollLeft < 4;
+  $("#rail-next").disabled = rail.scrollLeft + rail.clientWidth >= rail.scrollWidth - 4;
+}
+
+/* Collection */
+function renderFilters() {
+  $("#type-filters").innerHTML = TYPES.map((t) => {
+    const n = t.key === "all" ? PRODUCTS.length : PRODUCTS.filter((p) => p.type === t.key).length;
+    return `<button type="button" class="tab" data-type="${t.key}" aria-pressed="${state.type === t.key}">${t.label}<sup>${n}</sup></button>`;
+  }).join("");
+  $("#color-filters").innerHTML =
+    `<button type="button" class="tab" data-color="" aria-pressed="${state.color === null}">All colors</button>` +
+    COLORS.map((c) => `<button type="button" class="swatch" data-color="${c.key}" style="${swatchBg(c.key)}" aria-pressed="${state.color === c.key}" aria-label="${c.label}" data-tip="${c.label}"></button>`).join("");
+}
+
+function visibleProducts() {
+  const list = PRODUCTS.filter((p) => (state.type === "all" || p.type === state.type) && (!state.color || p.colors.includes(state.color)));
+  if (state.sort === "low") return list.sort((a, b) => a.price - b.price || a.id.localeCompare(b.id));
+  if (state.sort === "high") return list.sort((a, b) => b.price - a.price || a.id.localeCompare(b.id));
+  if (state.sort === "new") return list.sort((a, b) => a.id.localeCompare(b.id));
+  return list.sort((a, b) => rank(a) - rank(b));
+}
+
+function cardHTML(p) {
+  const tag = p.type === "set" ? "Set" : p.type === "pair" ? "Pair" : p.type === "necklace" ? "Necklace" : "";
+  return `<article class="card">
+    <div class="card-media">
+      <button type="button" class="card-open" data-open="${p.id}" aria-label="View ${esc(p.name)}"><img src="${lg(p.id)}" srcset="${srcset(p.id)}" sizes="(max-width: 720px) 48vw, (max-width: 1040px) 32vw, 300px" alt="${esc(photoAlt(p))}" loading="lazy" decoding="async"></button>
+      ${tag ? `<span class="card-tag">${tag}</span>` : ""}
+      <button type="button" class="card-add" data-add="${p.id}" aria-label="Add ${esc(p.name)} to bag">${ICON.plus}<span>Add to bag</span></button>
+    </div>
+    <div class="card-info">
+      <button type="button" class="card-name" data-open="${p.id}" tabindex="-1">${esc(p.name)}</button>
+      <p class="card-stones">${esc(p.stones)}</p>
+      <span class="price">${money(p.price)}</span>
+    </div>
+  </article>`;
+}
+
+function renderGrid(animate) {
+  const list = visibleProducts();
+  const grid = $("#grid");
+  grid.innerHTML = list.map(cardHTML).join("");
+  $("#empty").hidden = list.length > 0;
+  const t = TYPES.find((x) => x.key === state.type), c = COLORS.find((x) => x.key === state.color);
+  const n = list.length;
+  $("#result-count").textContent = `${n} ${c ? c.label.toLowerCase() + " " : ""}${n === 1 ? t.one : t.plural}`;
+  const cols = getComputedStyle(grid).gridTemplateColumns.split(" ").length || 1;
+  [...grid.children].forEach((el, i) => {
+    if (animate && !reduce) { el.classList.add("enter"); el.style.setProperty("--d", Math.min(i, 11) * 45 + "ms"); }
+    else reveal(el, (i % cols) * 80);
+  });
+}
+
+function setFilter(patch, jump) {
+  Object.assign(state, patch);
+  renderFilters(); renderGrid(true);
+  if (jump) { document.getElementById("shop").scrollIntoView({ behavior: reduce ? "auto" : "smooth" }); return; }
+  const bar = $("#filterbar");
+  if (getComputedStyle(bar).position !== "sticky") return;
+  const barBottom = bar.getBoundingClientRect().bottom, gridTop = $("#grid").getBoundingClientRect().top;
+  if (gridTop < barBottom - 2) window.scrollTo({ top: window.scrollY + gridTop - barBottom - 32, behavior: reduce ? "auto" : "smooth" });
+}
+
+/* Size finder */
+const sizer = { wrist: 6.5, fit: 0.75, stone: "carnelian" };
+const CLASP_IN = 0.6;   // lobster clasp and rings take up about this much of the length
+function renderStonePick() {
+  $("#stone-pick").innerHTML = '<span class="field-label">Preview in</span>' + RING_STONES.map((s) =>
+    `<button type="button" class="swatch lg" data-stone="${s.key}" aria-pressed="${s.key === sizer.stone}" aria-label="${s.label}" data-tip="${s.label}" style="background: radial-gradient(circle at 36% 30%, ${s.tones[0][0]}, ${s.tones[0][1]} 55%, ${s.tones[0][2]});"></button>`).join("");
+}
+function renderSizer() {
+  const L = sizer.wrist + sizer.fit;
+  const beads = Math.round(((L - CLASP_IN) * 25.4) / 8);
+  const R = L * 14.5, c = 160;
+  const claspAng = (CLASP_IN / L) * Math.PI * 2;
+  const step = (Math.PI * 2 - claspAng) / beads;
+  const r = Math.min((step * R) / 2 * 0.94, 15);
+  const stone = RING_STONES.find((s) => s.key === sizer.stone);
+  let svg = "<defs>" + stone.tones.map((t, i) =>
+    `<radialGradient id="rg${i}" cx="34%" cy="30%" r="78%"><stop offset="0" stop-color="${t[0]}"/><stop offset=".55" stop-color="${t[1]}"/><stop offset="1" stop-color="${t[2]}"/></radialGradient>`).join("") +
+    '<linearGradient id="rg-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6e2a6"/><stop offset=".5" stop-color="#c9a24f"/><stop offset="1" stop-color="#8a6420"/></linearGradient></defs>';
+  svg += `<circle class="ring-wire" cx="${c}" cy="${c}" r="${R.toFixed(1)}"/>`;
+  for (let i = 0; i < beads; i++) {
+    const a = -Math.PI / 2 + claspAng / 2 + step * (i + 0.5);
+    const x = c + R * Math.cos(a), y = c + R * Math.sin(a);
+    svg += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${r.toFixed(1)}" fill="url(#rg${(i * 7 + 3) % 3})"/>` +
+      `<circle cx="${(x - r * 0.34).toFixed(1)}" cy="${(y - r * 0.4).toFixed(1)}" r="${(r * 0.2).toFixed(1)}" fill="#ffffff" opacity=".5"/>`;
+  }
+  const top = c - R;
+  svg += `<ellipse cx="${c - 7}" cy="${top.toFixed(1)}" rx="9" ry="5.5" fill="url(#rg-gold)"/><circle cx="${c + 8}" cy="${top.toFixed(1)}" r="4.5" fill="none" stroke="url(#rg-gold)" stroke-width="2.2"/>`;
+  $("#ring").innerHTML = svg;
+  $("#ring").setAttribute("aria-label", `A ${fmt(L)} inch bracelet of about ${beads} ${stone.label.toLowerCase()} beads`);
+  $("#ring-len").textContent = `${fmt(L)} in`;
+  $("#ring-cm").textContent = `${(L * 2.54).toFixed(1)} cm`;
+  $("#wrist-out").textContent = `${fmt(sizer.wrist)} in · ${(sizer.wrist * 2.54).toFixed(1)} cm`;
+  $("#wrist").style.setProperty("--p", ((sizer.wrist - 5) / 3.5) * 100 + "%");
+  $("#sizer-result").innerHTML = `Order a <strong>${fmt(L)} in</strong> bracelet. That's about <strong>${beads}</strong> round 8 mm beads plus the clasp.`;
+}
+function fitLabel() { return { 0.5: "snug", 0.75: "comfortable", 1: "loose" }[sizer.fit]; }
+
+/* Bag */
+function bagCount() { return Object.values(state.bag).reduce((s, q) => s + q, 0); }
+function addToBag(id, qty, fromImg) {
+  state.bag[id] = Math.min(9, (state.bag[id] || 0) + qty);
+  saveBag(); renderBag();
+  flyToBag(fromImg, id);
+  toast(`${byId[id].name} is in your bag`, id, true);
+}
+function bump() { const c = $("#bag-count"); c.classList.remove("bump"); void c.offsetWidth; c.classList.add("bump"); }
+function flyToBag(fromImg, id) {
+  if (reduce || !fromImg || !fromImg.getBoundingClientRect || !fromImg.animate) { bump(); return; }
+  const a = fromImg.getBoundingClientRect(), b = $("#bag-open").getBoundingClientRect();
+  if (!a.width) { bump(); return; }
+  const img = document.createElement("img");
+  img.src = sm(id); img.alt = ""; img.className = "fly";
+  Object.assign(img.style, { left: a.left + "px", top: a.top + "px", width: a.width + "px", height: a.height + "px" });
+  document.body.appendChild(img);
+  const dx = b.left + b.width / 2 - (a.left + a.width / 2), dy = b.top + b.height / 2 - (a.top + a.height / 2);
+  const s = 34 / Math.max(a.width, a.height);
+  img.animate([
+    { transform: "none", opacity: 1 },
+    { transform: `translate(${dx * 0.5}px, ${dy * 0.5 - 60}px) scale(${(1 + s) / 2})`, opacity: 1, offset: 0.55 },
+    { transform: `translate(${dx}px, ${dy}px) scale(${s})`, opacity: 0.3 }
+  ], { duration: 750, easing: "cubic-bezier(.45,0,.25,1)" }).onfinish = () => { img.remove(); bump(); };
+}
+function renderBag() {
+  const ids = Object.keys(state.bag).filter((id) => byId[id] && state.bag[id] > 0);
+  const count = bagCount();
+  $("#bag-count").textContent = count;
+  $("#bag-open").setAttribute("aria-label", `Open bag, ${count} ${count === 1 ? "item" : "items"}`);
+  $("#bag-n").textContent = count ? `${count} ${count === 1 ? "item" : "items"}` : "";
+  $("#bag-items").innerHTML = ids.length ? ids.map((id) => {
+    const p = byId[id], q = state.bag[id];
+    return `<div class="line-item">
+      <img src="${sm(id)}" alt="">
+      <div style="min-width: 0;">
+        <div class="nm">${esc(p.name)}</div>
+        <div class="meta">No. ${id} · ${TYPE_LABEL[p.type]} · ${money(p.price)}</div>
+        <div class="line-ctrl"><span class="qty"><button type="button" data-dec="${id}" aria-label="Decrease ${esc(p.name)}">−</button><span>${q}</span><button type="button" data-inc="${id}" aria-label="Increase ${esc(p.name)}">+</button></span><button type="button" class="remove" data-remove="${id}">Remove</button></div>
+      </div>
+      <span class="price">${money(p.price * q)}</span>
+    </div>`;
+  }).join("") : `<div class="bag-empty">
+      <svg viewBox="0 0 84 84" aria-hidden="true">${Array.from({ length: 14 }, (_, i) => { const a = (i / 14) * Math.PI * 2; return `<circle cx="${(42 + 30 * Math.cos(a)).toFixed(1)}" cy="${(42 + 30 * Math.sin(a)).toFixed(1)}" r="6" fill="none" stroke="currentColor" stroke-width="1.2"/>`; }).join("")}</svg>
+      <p>Your bag is empty.</p>
+      <button type="button" class="btn" id="bag-browse">Browse the collection</button>
+    </div>`;
+  $("#subtotal").textContent = money(ids.reduce((s, id) => s + byId[id].price * state.bag[id], 0));
+  $("#bag-foot").hidden = ids.length === 0;
+  $("#checkout-msg").hidden = true;
+}
+
+/* Layers */
+let lastFocus = null;
+const openLayerEl = () => ["#drawer", "#modal"].map($).find((el) => el.classList.contains("open"));
+function openLayer(el) {
+  if (!openLayerEl()) lastFocus = document.activeElement;
+  el.classList.add("open"); el.setAttribute("aria-hidden", "false"); $("#scrim").classList.add("open");
+  document.documentElement.classList.add("locked");
+  setTimeout(() => { const b = el.querySelector(".icon-btn"); if (b) b.focus({ preventScroll: true }); }, 60);
+}
+function closeLayers(restore = true) {
+  ["#drawer", "#modal"].forEach((s) => { const el = $(s); el.classList.remove("open"); el.setAttribute("aria-hidden", "true"); });
+  $("#scrim").classList.remove("open"); document.documentElement.classList.remove("locked");
+  $("#m-media").classList.remove("zoom");
+  if (restore && lastFocus && lastFocus.focus) lastFocus.focus({ preventScroll: true });
+}
+function openBag() {
+  if ($("#modal").classList.contains("open")) { $("#modal").classList.remove("open"); $("#modal").setAttribute("aria-hidden", "true"); }
+  $("#toast").classList.remove("show");
+  renderBag(); openLayer($("#drawer"));
+}
+
+function related(p) {
+  return PRODUCTS.filter((q) => q.id !== p.id)
+    .map((q) => ({ q, s: q.colors.filter((c) => p.colors.includes(c)).length * 3 + (q.type !== p.type ? 1 : 0) - rank(q) / 1000 }))
+    .sort((a, b) => b.s - a.s).slice(0, 4).map((x) => x.q);
+}
+function openProduct(id) {
+  const p = byId[id]; if (!p) return;
+  state.modalId = id; state.modalQty = 1;
+  const img = $("#m-img");
+  img.src = lg(id); img.alt = photoAlt(p);
+  if (!reduce && img.animate) img.animate([{ opacity: 0.25 }, { opacity: 1 }], { duration: 350, easing: "ease-out" });
+  $("#m-media").classList.remove("zoom");
+  $("#m-no").textContent = `No. ${id} · ${TYPE_LABEL[p.type]}`;
+  $("#m-name").textContent = p.name;
+  $("#m-price").textContent = money(p.price);
+  $("#m-desc").textContent = p.desc;
+  const rows = [["Stones", p.stones], ["Metal", p.metal], ["Closure", p.closure]];
+  if (p.includes) rows.push(["Includes", p.includes]);
+  $("#m-specs").innerHTML = rows.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join("");
+  $("#m-qty").textContent = "1";
+  $("#m-related").innerHTML = related(p).map((q) =>
+    `<button type="button" data-open="${q.id}"><img src="${sm(q.id)}" alt="" loading="lazy"><span class="r-name">${esc(q.name)}</span><span class="r-price">${money(q.price)}</span></button>`).join("");
+  $("#modal-scroll").scrollTop = 0;
+  if (!$("#modal").classList.contains("open")) { $("#drawer").classList.remove("open"); openLayer($("#modal")); }
+}
+function stepProduct(dir) {
+  const list = visibleProducts();
+  const ids = list.some((p) => p.id === state.modalId) ? list.map((p) => p.id) : PRODUCTS.map((p) => p.id);
+  const i = ids.indexOf(state.modalId);
+  openProduct(ids[(i + dir + ids.length) % ids.length]);
+}
+
+let toastTimer;
+function toast(msg, imgId, withBag) {
+  const t = $("#toast");
+  t.innerHTML = (imgId ? `<img src="${sm(imgId)}" alt="">` : "") + `<span class="toast-msg">${esc(msg)}</span>` +
+    (withBag ? '<button type="button" class="toast-act" data-bag>View bag</button>' : "");
+  t.classList.toggle("has-img", !!imgId); t.classList.toggle("has-act", !!withBag);
+  t.classList.add("show");
+  clearTimeout(toastTimer); toastTimer = setTimeout(() => t.classList.remove("show"), 3400);
+}
+
+/* Footer name sized to fill the width */
+function fitBrand() {
+  const box = $("#foot-brand"), txt = $("#foot-brand-text");
+  txt.style.fontSize = "100px";
+  const w = txt.getBoundingClientRect().width;
+  if (w) txt.style.fontSize = Math.max(36, Math.min(220, (100 * box.clientWidth) / w * 0.99)) + "px";
+}
+
+/* Events */
+const header = $("#header");
+function closeMenu() { header.classList.remove("menu-open"); $("#menu-btn").setAttribute("aria-expanded", "false"); }
+document.addEventListener("click", (e) => {
+  const t = e.target.closest("button, a"); if (!t) return;
+  const d = t.dataset;
+  if (d.type) setFilter({ type: d.type });
+  else if (d.stone) {
+    sizer.stone = d.stone;
+    document.querySelectorAll("[data-stone]").forEach((b) => b.setAttribute("aria-pressed", b.dataset.stone === sizer.stone));
+    renderSizer();
+  }
+  else if ("color" in d) setFilter({ color: d.color || null });
+  else if ("hero" in d) { showHero(Number(d.hero)); startHero(); }
+  else if (d.cat) { closeLayers(false); closeMenu(); setFilter({ type: d.cat, color: null }, true); }
+  else if (d.open) openProduct(d.open);
+  else if (d.add) addToBag(d.add, 1, t.closest(".card")?.querySelector(".card-open img"));
+  else if (d.inc) { state.bag[d.inc] = Math.min(9, state.bag[d.inc] + 1); saveBag(); renderBag(); }
+  else if (d.dec) { state.bag[d.dec] -= 1; if (state.bag[d.dec] <= 0) delete state.bag[d.dec]; saveBag(); renderBag(); }
+  else if (d.remove) { delete state.bag[d.remove]; saveBag(); renderBag(); $("#bag-close").focus(); }
+  else if (d.fit) {
+    sizer.fit = Number(d.fit);
+    document.querySelectorAll("[data-fit]").forEach((b) => b.setAttribute("aria-checked", b === t));
+    renderSizer();
+  }
+  else if ("bag" in d) { closeMenu(); openBag(); }
+  else if (t.id === "bag-browse" || t.id === "clear-filters") {
+    closeLayers(false);
+    if (t.id === "clear-filters") setFilter({ type: "all", color: null });
+    document.getElementById("shop").scrollIntoView({ behavior: reduce ? "auto" : "smooth" });
+  }
+});
+$("#menu-btn").addEventListener("click", () => {
+  const open = !header.classList.contains("menu-open");
+  header.classList.toggle("menu-open", open); $("#menu-btn").setAttribute("aria-expanded", open);
+});
+$("#nav").addEventListener("click", (e) => { if (e.target.closest("a")) closeMenu(); });
+$("#sort").addEventListener("change", (e) => setFilter({ sort: e.target.value }));
+$("#bag-open").addEventListener("click", openBag);
+$("#bag-close").addEventListener("click", () => closeLayers());
+$("#modal-close").addEventListener("click", () => closeLayers());
+$("#scrim").addEventListener("click", () => closeLayers());
+$("#modal").addEventListener("click", (e) => { if (e.target === $("#modal")) closeLayers(); });
+$("#m-minus").addEventListener("click", () => { state.modalQty = Math.max(1, state.modalQty - 1); $("#m-qty").textContent = state.modalQty; });
+$("#m-plus").addEventListener("click", () => { state.modalQty = Math.min(9, state.modalQty + 1); $("#m-qty").textContent = state.modalQty; });
+$("#m-add").addEventListener("click", () => addToBag(state.modalId, state.modalQty, $("#m-img")));
+$("#m-prev").addEventListener("click", () => stepProduct(-1));
+$("#m-next").addEventListener("click", () => stepProduct(1));
+$("#checkout").addEventListener("click", () => { $("#checkout-msg").hidden = false; });
+$("#order-note").value = state.note;
+$("#order-note").addEventListener("input", (e) => { state.note = e.target.value; saveNote(); });
+$("#rail-prev").addEventListener("click", () => railStep(-1));
+$("#rail-next").addEventListener("click", () => railStep(1));
+$("#rail").addEventListener("scroll", railButtons, { passive: true });
+$("#wrist").addEventListener("input", (e) => { sizer.wrist = Number(e.target.value); renderSizer(); });
+$("#size-note").addEventListener("click", () => {
+  const L = sizer.wrist + sizer.fit;
+  const line = `Wrist ${fmt(sizer.wrist)} in, ${fitLabel()} fit: ${fmt(L)} in bracelet`;
+  if (state.note.includes(line)) { toast("That size is already in your order note", null, true); return; }
+  state.note = state.note.trim() ? state.note.trim() + "\n" + line : line;
+  $("#order-note").value = state.note; saveNote();
+  toast(`Added to your order note: ${fmt(L)} in bracelet`, null, true);
+});
+const heroVisual = $("#hero-visual");
+heroVisual.addEventListener("mouseenter", stopHero);
+heroVisual.addEventListener("mouseleave", startHero);
+heroVisual.addEventListener("focusin", stopHero);
+heroVisual.addEventListener("focusout", startHero);
+
+const media = $("#m-media");
+media.addEventListener("pointermove", (e) => {
+  if (e.pointerType !== "mouse") return;
+  const r = media.getBoundingClientRect();
+  $("#m-img").style.transformOrigin = `${((e.clientX - r.left) / r.width) * 100}% ${((e.clientY - r.top) / r.height) * 100}%`;
+  media.classList.add("zoom");
+});
+media.addEventListener("pointerleave", () => media.classList.remove("zoom"));
+
+document.addEventListener("keydown", (e) => {
+  const layer = openLayerEl();
+  if (e.key === "Escape") { if (layer) closeLayers(); else closeMenu(); return; }
+  if (!layer) return;
+  if (layer.id === "modal" && (e.key === "ArrowRight" || e.key === "ArrowLeft")) { stepProduct(e.key === "ArrowRight" ? 1 : -1); return; }
+  if (e.key === "Tab") {
+    const f = [...layer.querySelectorAll("button, [href], input, textarea, select")].filter((x) => !x.disabled && x.offsetParent !== null);
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
+});
+
+const setHeaderH = () => document.documentElement.style.setProperty("--header-h", header.offsetHeight + "px");
+const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);
+addEventListener("scroll", onScroll, { passive: true });
+let resizeTimer;
+addEventListener("resize", () => { clearTimeout(resizeTimer); resizeTimer = setTimeout(() => { fitBrand(); railButtons(); }, 120); });
+if ("ResizeObserver" in window) new ResizeObserver(setHeaderH).observe(header);
+
+renderHero(); renderArches(); renderFilters(); renderGrid(false); renderRail();
+renderStonePick(); renderSizer(); renderBag();
+setHeaderH(); onScroll(); fitBrand(); startHero();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { fitBrand(); setHeaderH(); });
+document.querySelectorAll("[data-reveal]").forEach((el) => reveal(el, Number(el.dataset.delay) || 0));
+</script>
+</body>
+</html>
